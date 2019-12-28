@@ -1,0 +1,59 @@
+body{
+    background-color: lightgray;
+}
+
+h1{
+    color: black;
+    font-size: 200%;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2{
+    font-size: 175%;
+    font-weight: bold;
+}
+
+p{
+    font-size: 125%;
+    text-align: justify;
+}
+
+.column-sm-3{
+    margin: 10px auto;
+    align-self: center;
+    box-shadow: 10px 10px 5px darkslategray;
+}
+
+.column-sm-6{
+    color: mediumblue;
+    margin: 10px auto;
+    align-self: center;
+}
+
+.button{
+    align-self: center;
+}
+
+
+.navbar-custom{
+    text-align: center;
+    font-size: larger;
+    color: rgb(51, 131, 250);
+    background-color: black;
+}
+
+#aa1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+    
+    
+.nav-item{
+    color: rgb(51, 131, 250);
+}
+
+.nav-item:hover{
+    color: greenyellow;
+}
