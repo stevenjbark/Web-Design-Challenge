@@ -35,7 +35,7 @@ p{
     text-align: center;
 }
 
-.col-lg-8{
+.col-lg-10{
     text-align: center;
 }
 
@@ -70,6 +70,10 @@ p{
     font-size: larger;
     color: rgb(51, 131, 250);
     background-color: black;
+}
+
+.navbar-nav{
+    text-align: center;
 }
 
 #aa1{

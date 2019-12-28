@@ -42,12 +42,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Humidity versus Latitude</h2><br>
+                <h2>Cloud Cover versus Latitude</h2><br>
             </div>
         </div><br>
 
         <div class="col-lg-12 text-center">
-            <img id="b1" src="Resources/assets/images/HumidityVsCityLat.png"
+            <img id="b1" src="Resources/assets/images/CloudinessVsCityLat.png"
                             height=600px
                             />
             </div><br>
@@ -57,13 +57,13 @@
             </div>
 
             <div class="col-lg-10">
-                <p>The observed correlation between maximum temperatures and latitude suggested several other weather indicators for comparison.
-                    Humidity is correlative with temperature, but consideration of the physics of temperature and water content in the atmosphere
-                    suggests this correlation is complex. Higher temperatures would increase the evaporation of water into the atmosphere and positively
-                    contribute to humidity. However, the total quantity of water vapor capable of being suspended in the atmosphere increases with 
-                    temperature, which would reduce the measured humidity. As the graph above indicates, there is very little observable correlation between
-                    the latitude and percent relative humidity in the atmosphere. While correlation between temperature and latitude suggested possible 
-                    correlation with humidity, the WeatherPy data did not support this hypothesis.  
+                <p>Another weather indicator is the relative cloud cover, as measured by the percent coverage by clouds at a geographical location.
+                    It is well documented that tropical regions have higher annual rainfall, and that the majority of tropical localities
+                    are closer to the Equator. However, the assumption that this would correlate with cloud coverage is not supported by the
+                    WeatherPy data. In fact, there may be a small correlation to higher humidity at higher positive and negative latitudes, but no
+                    such correlation is observable in the cloud cover data. An interesting observation is the linear clustering of data points at 0%,
+                    20%, 40%, 75%, and 100% relative cloud cover. The reasons for this clustering are not apparent in the data, but may be related
+                    to the subjective nature of defining "relative cloud coverage" by meteorologists. 
                 </p>
             </div>
 
