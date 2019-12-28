@@ -13,6 +13,7 @@ h1{
 h2{
     font-size: 175%;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 p{
@@ -20,20 +21,47 @@ p{
     text-align: justify;
 }
 
-.column-sm-3{
-    margin: 10px auto;
-    align-self: center;
-    box-shadow: 10px 10px 5px darkslategray;
+.col-lg-3{
+    text-align: center;
+    border: 30px;
+    padding: 10px;
 }
 
-.column-sm-6{
-    color: mediumblue;
-    margin: 10px auto;
-    align-self: center;
+.col-lg-4{
+    text-align: left;
+}
+
+.col-lg-6{
+    text-align: center;
+}
+
+.col-lg-8{
+    text-align: center;
+}
+
+#a1{
+    box-shadow: 10px 10px 5px darkslategray;
+    position: relative;
+}
+
+#a2{
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+#a3{
+    color: rgb(2, 2, 182);
+    margin: auto;
+    text-align: center;
+}
+
+#b1{
+    text-align: center;   
 }
 
 .button{
-    align-self: center;
+    align-items: center;
 }
 
 
