@@ -1,0 +1,85 @@
+body{
+    background-color: lightgray;
+}
+
+h1{
+    color: black;
+    font-size: 200%;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2{
+    font-size: 175%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 125%;
+    text-align: justify;
+}
+
+.col-lg-3{
+    text-align: center;
+    border: 30px;
+    padding: 10px;
+}
+
+.col-lg-4{
+    text-align: left;
+}
+
+.col-lg-6{
+    text-align: center;
+}
+
+.col-lg-10{
+    text-align: center;
+}
+
+#a1{
+    box-shadow: 10px 10px 5px darkslategray;
+    position: relative;
+}
+
+#a2{
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+#a3{
+    color: rgb(2, 2, 182);
+    margin: auto;
+    text-align: center;
+}
+
+#b1{
+    text-align: center;   
+}
+
+.button{
+    align-items: center;
+}
+
+
+.navbar-custom{
+    background-color: black;
+    color: rgb(51, 131, 250);
+    font-size: xx-large;  
+}
+
+.navbar-brand{
+    
+}
+
+#a0{
+    color: rgb(51, 131, 250);
+    font-size: large;
+}
+
+.nav-item:hover{
+    color: greenyellow;
+}

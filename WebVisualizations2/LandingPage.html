@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Analysis: Latitude and Temperature</title>
+
+     <!-- Bring in our bootstrap stylesheet with integrity checking. Confirmed using SRI Hash Generator -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Dropdown Navbar With Links -->
+<div class="container-fluid">
+    <!-- Dropdown Navbar With Links -->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="a0" href="LandingPage.html">WeatherPyHome<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="a0" href="TemperaturePage.html">Temperature</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="a0" href="HumidityPage.html">Humidity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="a0" href="CloudinessPage.html">Cloud Cover</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="a0" href="WindSpeedPage.html">Wind Speed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="a0" href="Resources/cities_cleaned.html">City Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div><br>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <!-- Initiate a container for LandingPage, then rows and columns-->
+<h1>WeatherPy: Weather Indicators by Latitude for 557 Cities</h1><br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Analysis of weather patterns is an extremely complex problem often requiring supercomputers for predictive capabilities. However, many basic analyses can be performed experimentally
+                    using simple correlative tools. As an example of this simplified approach, we acquired data for 557 different cities and evaluated temperature, humidity, cloud cover, and wind speed
+                    as a correlative with the latitude of the city. Using this simple correlation, we demonstrate that both correlated and  non-correlated measurements are readily identified.
+                </p>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+            <img id="a1" src="Resources/assets/images/MaxTempVsCityLat.png"
+                            height=175px
+                            />
+            </div>
+            <div class="col-lg-3 col-md-6">
+            <img id="a1" src="Resources/assets/images/HumidityVsCityLat.png"
+                            height=175px 
+                            />
+            </div>
+            <div class="col-lg-3 col-md-6">
+            <img id="a1" src="Resources/assets/images/CloudinessVsCityLat.png"
+                            height=175px
+                            />
+            </div>  
+            <div class="col-lg-3 col-md-6">
+            <img id="a1" src="Resources/assets/images/WindSpeedVsCityLat.png"
+                            height=175px
+                            />
+            </div>
+        </div><br>
+
+        <!--Inserting buttons to forward user to larger images-->
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <form id="a2" method="get" action="Resources/assets/images/MaxTempVsCityLat.png">
+                    <button type="submit">Zoom:Temperature!</button></form>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <form id="a2" method="get" action="Resources/assets/images/HumidityVsCityLat.png">
+                    <button type="submit">Zoom:Humidity!</button></form> 
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <form id="a2" method="get" action="Resources/assets/images/CloudinessVsCityLat.png">
+                    <button type="submit">Zoom:Cloudiness!</button></form> 
+            </div> 
+            
+            <div class="col-lg-3 col-md-6">
+                <form id="a2" method="get" action="Resources/assets/images/WindSpeedVsCityLat.png">
+                    <button type="submit">Zoom:Wind Speed!</button></form> 
+            </div>
+
+        </div><br><br>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Summary of Study</h2><br>
+                <p>This study used the OpenWeatherMap API and Python/Pandas data analysis tools to identify weather indicators for 557 random cities. These weather indicators were plotted against
+                    the latitude of the city and graphically represented using the MatPlotLib graphical library. The date for analyses was 11/11/2019, but alternative dates are possible for further
+                    analyses using the OpenWeather API and Python/Pandas scripts stored in a GitHub Repo linked below. Please note that the cities were identified using citypy, but an alterantive
+                    approach would be to use the cities list from OpenWeather.org and the random number generator in Numpy to create a random city list.  
+                </p><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <a id="a3" href="https://openweathermap.org/api" target="blank">OpenWeather API Link (Opens in New Tab)</a>
+            </div>
+
+            <div class="col-lg-6">
+                <a id="a3" href="https://github.com/stevenjbark/PythonAPIs-challenge.git" target="blank">Git Repo for Python/Pandas Analysis (Opens in New Tab)</a>
+            </div>
+        </div>
+           
+    </div>
+
+</body>
+
+
+
+
+</html>
