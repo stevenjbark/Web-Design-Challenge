@@ -3,13 +3,13 @@
 <html lang="en">
 
 <head>
+    <title>Data Comparison</title>
 
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -46,59 +46,80 @@
     </nav>
 </div><br>
 
-
+<!-- JavaScript links to enable responsive dropdown menu items -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+<!-- Title -->
+<h1>Latitude Comparison:</h1>
+<h1>Temperature, Humidity, Cloudiness, and Wind Speed</h1>
+
+<!-- Constructor for bootstrap grid system to create views for the different images -->
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Wind Speed versus Latitude</h2><br>
+        <div class="row text-center">
+            <div class="col-lg-6">
+                <img class="img-responsive" id="a4" src="Resources/assets/images/MaxTempVsCityLat.png"
+                    height=325px
+                    />
+
             </div>
-        </div><br>
+            <div class="col-lg-6">
+                <img class="img-responsive" id="a4" src="Resources/assets/images/HumidityVsCityLat.png"
+                    height=325px
+                    />
+            </div>
+        </div>
 
-        <div class="col-lg-12 text-center">
-            <img class="img-responsive" src="Resources/assets/images/WindSpeedVsCityLat.png"
-                            height=600px
-                             />
-        </div><br>
-
-        <div class="col-lg-12 text-center">
-             <form id="a2" method="get" action="Resources/assets/images/WindSpeedVsCityLat.png">
-                <button type="submit">Zoom:Wind Speed!</button></form> 
-        </div><br>
-
-        <div class="row">
-            <div class="col-lg-1">
+        <div class="row text-center">
+            <div class="col-lg-6">
+                <img class="img-responsive" id="a4" src="Resources/assets/images/CloudinessVsCityLat.png"
+                    height=325px
+                    />
             </div>
 
-            <div class="col-lg-10">
-                <p>Temperature differentials observed in the WeatherPy data suggested the potential for atmospheric disturbances across
-                    geographical regions, which would manifest as wind currents. Much as was observed for the humidity data, no obvious
-                    correlation between wind speed and latitude were observed. However, a small possible correlation with higher wind speed
-                    and higher and lower latitude may be significant, as evidenced by almost no measured wind speeds above 8 MPH within
-                    +/-20 degrees of the Equator, but multiple measurements in excess of 10 MPH at latitudes above and below this Equatorial
-                    range. One potential limitation of this study is the question if differences in latitude temperatures produced spcific 
-                    direcctionality of air currents. However, this study did not measure the directionality of wind currents necessary for
-                    such analysis.
+            <div class="col-lg-6">
+                <img class="img-responsive" id="a4" src="Resources/assets/images/WindSpeedVsCityLat.png"
+                    height=325px
+                    />
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="column-lg-1">
+            </div>
+
+            <div class="column-lg-10">
+                <p>Comparison of the temperature, humidity, cloudiness, and wind speed data by scatter plot comparison with Latitude
+                    demonstrates clear differences between correlated and non-correlated data. Temperature is clearly correlated to 
+                    latitude by visual inspection. In contrast, there is very little correlation observed in Humidity and Wind Speed
+                    plots, with only a marginal possible link to higher wind speed at higher and lower latitudes. Cloudiness has little
+                    if any correlation observable, with only curious clustering on %Coverage at 0%, 20%, 40%, 75%, 90% and 100% cloud
+                    coverage (a potential reason for this is proposed in the Cloud Cover Page).
                 </p>
             </div>
 
-            <div class="col-lg-1">
+            <div class="column-lg-1">
             </div>
 
-            
         </div>
-
-        
 
     </div>
 
-
-
 </body>
+
+
+
+
+
+
+
+
+
+
 
 
 
